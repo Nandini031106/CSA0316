@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main() {
+    int n, i, num;
+    printf("Enter how many numbers: ");
+    scanf("%d", &n);
+    printf("Enter the numbers:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &num);
+
+        if (num % 2 == 0)
+            printf("%d is Even\n", num);
+        else
+            printf("%d is Odd\n", num);
+    }
+
+    return 0;
+}
+output:
+Enter how many numbers: 7
+Enter the numbers:
+2
+2 is Even
+3
+3 is Odd
+8
+8 is Even
+13
+13 is Odd
